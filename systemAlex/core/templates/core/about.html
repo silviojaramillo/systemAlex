@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+<!--            -->
+{% block title %}Acerca de{% endblock %}
+<!--Cargando la imagen-->
+{% block background %} {% load static %} {% static 'core/img/about-bg.jpg' %} {% endblock %}
+<!--fin cargar imagen-->
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span> {% endblock %}
+<!--            -->
+{% block content %}
+<div class="row">
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+          <img class="img-fluid avatar" src="{% static 'core/img/avatar.jpg' %}" alt="">
+    </div>
+        <div class="col-lg-7 col-md-8">
+          <h2 class="section-heading">Alex Jaramillo</h2>   
+          <p>Soy un joven de 23 años que busca ayudar a crecer a los negocios mediante el aprovechamiento de las herramientas tecnológicas de Marketing Digital</p>
+          <p>Soy el creador y administrador de un grupo de Facebook con más de 500 mil participantes y un perfil de Instagram con más de 10 mil seguidores. Tengo un conocimiento avanzado sobre estas plataformas.</p>
+          <p>En estos momentos estoy terminando el curso de Marketing con el programa Crece con Google y Junior Achievement que se ha enfocado en enseñar el manejo de Google Ads. A día de hoy cuento con las certificaciones en Publicidad con Google Ads y Vídeo de YouTube.</p>
+        </div>
+</div>
+{% endblock %}
