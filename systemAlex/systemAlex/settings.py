@@ -81,7 +81,7 @@ DATABASES = {
         'OPTIONS': {
         'init_command': 'SET default_storage_engine=INNODB',
         },
-        'NAME': 'portafolio-django',
+        'NAME': 'portafolio',
         'USER': 'root',
         'PASSWORD': '',
         'HOST': 'localhost',
