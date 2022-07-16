@@ -19,9 +19,10 @@ from tomlkit import document
 from core import views as core_views
 from django.conf import settings
 from portafolio import views as portafolio_views
+from about import views as about_views
 urlpatterns = [
     path('',core_views.home,name="home"),
-    path('about/', core_views.about,name='about'),
+    path('about/', about_views.about,name='about'),
     path('portafolio/', portafolio_views.portafolio,name='portafolio'),
     path('contact/', core_views.contact,name='contact'),
     path('admin/', admin.site.urls),

@@ -1,0 +1,24 @@
+{% extends 'core/base.html' %}
+<!--            -->
+{% block title %}Acerca de{% endblock %}
+<!--Cargando la imagen-->
+{% block background %} {% load static %} {% static 'core/img/about-bg.jpg' %} {% endblock %}
+<!--fin cargar imagen-->
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span> {% endblock %}
+<!--            -->
+{% block content %}
+  {% for bios in biography %}
+    <div class="row">
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+          <img class="img-fluid avatar" src="{{bios.image.url}}" alt="">
+    </div>
+        <div class="col-lg-7 col-md-8">
+          <h2 class="section-heading">{{bios.name}} {{bios.last_name}}</h2>   
+          <p>{{bios.biography}}</p>
+        </div>
+      </div>
+  {% endfor %}
+
+{% endblock %}

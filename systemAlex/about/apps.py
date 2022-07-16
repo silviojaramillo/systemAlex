@@ -1,7 +1,7 @@
 from django.apps import AppConfig
 
 
-class PortafolioConfig(AppConfig):
+class AboutConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'portafolio'
-    verbose_name = 'Sistema Alex'
+    name = 'about'
+    verbose_name = 'Mi biografía'
